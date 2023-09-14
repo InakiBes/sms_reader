@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">SMS reader</string>
+    <string name="sms_code">SMS code:</string>
 </resources>

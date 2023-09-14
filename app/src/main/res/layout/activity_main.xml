@@ -7,12 +7,27 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/tv_sms_viewer_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:text="@string/sms_code"
+        android:layout_marginStart="60dp"
+        android:textSize="32dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <TextView
+        android:id="@+id/tv_sms_viewer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="110dp"
+        android:layout_marginStart="16dp"
+        android:background="@color/gray"
+        android:paddingHorizontal="16dp"
+        android:textSize="32dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_sms_viewer_title"
+        app:layout_constraintStart_toEndOf="@+id/tv_sms_viewer_title"
+        app:layout_constraintTop_toTopOf="@+id/tv_sms_viewer_title"
+        tools:text="1234" />
 </androidx.constraintlayout.widget.ConstraintLayout>
